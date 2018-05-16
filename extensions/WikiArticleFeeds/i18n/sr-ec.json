@@ -1,0 +1,12 @@
+{
+	"@metadata": {
+		"authors": [
+			"Rancher",
+			"Михајло Анђелковић",
+			"Milicevic01"
+		]
+	},
+	"wikiarticlefeeds-desc": "Израђује фидове произведене код МедијаВики страна",
+	"wikiarticlefeeds-tracking-category-desc": "Страница генерише RSS довод.",
+	"wikiarticlefeeds_combined_description": "Ово је комбиновани довод који садржи ставке из неколико извора."
+}

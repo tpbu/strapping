@@ -1,0 +1,299 @@
+/* Custom theme overrides here */
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #697060;
+}
+
+#innerbodycontent {
+    background: none repeat scroll 0% 0% #FFF;
+    padding: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #E5E5E5 #D9D9D9 #CCC;
+    box-sizing: border-box;
+	margin-top:4rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Lato', sans-serif;
+}
+
+/* Sidebar */
+
+ul.side-bar {
+    list-style:none;
+    line-height: 36px;	
+}
+
+.panel-slide {
+	background-color: #121212;
+    font-weight: bold;
+	z-index: 999;
+}
+
+.panel-slide a {
+	color:#e6e6e6;
+}
+
+/* Various styles */
+
+.sub-title {
+    padding-bottom: 9px;
+    margin: 40px 0 20px;
+    border-bottom: 1px solid #d62c1a;
+}
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.footer-bottom {
+	display: block;
+    background-color: #07151e;
+    font-size: 1.8rem;
+	color:#fff;
+    padding: 1rem;
+	border-top: 3px solid #e6561d;
+}
+
+.footer-bottom ul {
+	list-style: none;
+	margin-left:3rem;
+	margin-bottom:2rem;
+}
+
+.footer-title {
+	text-align:center;
+	font-size: 1.8rem;
+	
+}
+
+body.page-Main_Page h1.firstHeading { display:none; }
+body.page-Bootstrap_Tabs h1.firstHeading { display:none; }
+
+.pull-top {margin-top:-12px!important}
+
+.panel-title, .panel-remove, .panel-expand {cursor:pointer;}
+
+.mw-redirectedfrom  { display:none; }
+
+.active {cursor:pointer;}
+
+.breadcrumb > li + li::before {
+    font-family: fontawesome;
+    content: "\f104";
+    padding: 0 5px;
+    color: #236b9b;
+}
+
+/*Windows*/
+.window {
+    clear: both;
+    border-style: solid;
+    border-color: #E6E6E6;
+    -moz-border-top-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    border-image: none;
+    border-width: 0px 2px 4px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+.window > .window-title {
+    background-color: #E6E6E6;
+    padding: 8px 10px;
+    border-bottom: 2px solid #DEDEDE;
+    color: #333;
+}
+.window.window-fill.green {
+    border-bottom: 3px solid #138A54;
+}
+.window.green {
+    border-color: #138A54;
+}
+.window.red {
+    border-color: #C62229;
+}
+.window.blue {
+    border-color: #4079B2;
+}
+.window > .window-body {
+    clear: both;
+    max-height: 200px;
+    padding: 15px;
+    overflow: auto;
+}
+.window.window-fill.green > .window-body {
+    background-color: #16A062;
+    color: #FFF;
+}
+.window.window-fill.red > .window-body {
+    background-color: #DA282F;
+    color: #FFF;
+}
+.window.window-fill.blue > .window-body {
+    background-color: #4C86BF;
+    color: #FFF;
+}
+.window.green > .window-title {
+    background-color: #16A062;
+    border-bottom-color: #138A54;
+    color: #FFF;
+}
+.window.blue > .window-title {
+    background-color: #4C86BF;
+    border-bottom-color: #4079B2;
+    color: #FFF;
+}
+.window.red > .window-title {
+    background-color: #DA282F;
+    border-bottom-color: #C62229;
+    color: #FFF;
+}
+.window > .window-title {
+    padding: 8px 10px;
+}
+
+.tab-pane p {
+  overflow-wrap: break-word;
+}
+
+.nav logo-container {
+  margin-top:5px!important;
+}
+
+
+/*
+Darkbox popup images
+*/
+[data-darkbox],
+[data-darkbox-group]{
+  cursor: pointer;
+  float: left;
+  margin-right: 10px;
+}
+
+/* #darkbox (shows large images as bg-image) */
+#darkbox{
+  color:#fff;
+  font: 14px/1.4 sans-serif;
+  position: fixed;
+  z-index: 999999;
+  top: 24px; /* since we cannot use padding */
+  left: 24px;
+  bottom: 24px;
+  right: 24px;
+  background: rgba(0,0,0, 0.8) none no-repeat 50% 50% / contain;
+  box-shadow: 0 0 0 24px rgba(0,0,0, 0.8);
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+  opacity: 0; 
+  visibility: hidden;
+}
+
+#darkbox.show{
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hover action elements styles */
+#darkbox a:hover{
+  color: #0bf;
+  border-color: #0bf;
+}
+
+/*prev next buttons*/
+#darkbox_prev,
+#darkbox_next{
+  cursor: pointer;
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 50%;
+  margin-top: -15px;
+  border: 0px solid #fff;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+}
+
+#darkbox_prev{
+  left: -6px;
+  border-width: 0 0 3px 3px;
+}
+
+#darkbox_next{
+  right: -6px;
+  border-width: 3px 3px 0 0;
+}
+
+/* Description */
+#darkbox_description{
+  position: absolute;
+  bottom: 25%;
+  right: 48%;
+  text-align: right;
+  text-shadow: 0 1px 1px #000;
+  background: rgb(54, 25, 25);
+  background: rgba(54, 25, 25, .5);
+  font-size:18px;
+}
+
+/* Stats counter */
+#darkbox_stats{
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* Close button */
+#darkbox_close{
+  position: absolute;
+  top: -8px;
+  right: 0px;
+}
+#darkbox_close:after{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 2.2em;
+  content: "\2A2F";
+  cursor: pointer;
+}
+
+/* Spinner */
+#darkbox:before{
+  content: "";
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  left: 50%;
+  top: 50%;
+  margin: -25px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: inset -2px 0 0 2px #fff;
+  -webkit-animation: darkboxRotate 1.5s linear infinite; 
+          animation: darkboxRotate 1.5s linear infinite; 
+}
+#darkbox.spinner:before{
+  visibility: visible;
+  opacity: 1;
+}
+@-webkit-keyframes darkboxRotate{ to{-webkit-transform: rotate(360deg); } }
+@keyframes         darkboxRotate{ to{        transform: rotate(360deg); } }
+
+/* Start your customizations here */
+
